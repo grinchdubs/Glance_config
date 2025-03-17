@@ -1,2 +1,2 @@
 # Glance Config
-My Glance frontpage config
+My Glance frontpage config for internal site
