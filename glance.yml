@@ -1,0 +1,87 @@
+pages:
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+
+          - type: rss
+            limit: 30
+            collapse-after: 3
+            cache: 3h
+            feeds:
+              - url: https://www.xda-developers.com/feed/
+                title: XDA
+              - url: https://hackaday.com/blog/feed/
+                title: Hackaday
+              - url: https://qrper.com/?feed=rss2
+                title: QRPer
+              - url: https://awesomekling.github.io/feed.xml
+              - url: https://rss.app/feeds/Z5idLkJo1ye5Opdj.xml
+                title: Derivative Community
+
+          - type: lobsters
+            sort-by: hot
+            limit: 15
+            collapse-after: 8
+
+
+      - size: full
+        widgets:
+          - type: hacker-news
+
+          - type: videos
+            channels:
+              - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+              - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
+              - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
+              - UChAu6Cof9KlfFxSbL9ytosQ # HRCC
+              - UC4X3gD_Z_cOZNJOZ2IhV3ug # Torin Blankensmith
+              - UC_8PKPeFbehqd7cTZtCr8lA # Dan Catt
+              - UC-9DT8kpvykuBEQ2iVatWbA # IHQ
+              - UCjae8TM-LdJqAmEaRVtYfDg # Tekt
+              - UC6Om9kAkl32dWlDSNlDS9Iw # Defcon
+              - UCgwjSkABQUH7fBT0CKXIBXQ # Learn MYOG
+              - UC8FnqtQddHEU67P4NfvdO7w # Ripstop by the roll
+
+          - type: reddit
+            subreddit: selfhosted
+            show-thumbnails: true
+          - type: reddit
+            subreddit: amateurradio
+          - type: reddit
+            show-thumbnails: true
+            subreddit: Dirtywave
+          - type: reddit
+            subreddit: PlotterArt
+            show-thumbnails: true
+          - type: reddit
+            subreddit: Defcon
+            show-thumbnails: true
+          - type: reddit
+            subreddit: HamRadio
+            show-thumbnails: true
+
+      - size: small
+        widgets:
+          - type: weather
+            location: Brooklyn, New York, United States
+
+          - type: markets
+            markets:
+              - symbol: SPY
+                name: S&P 500
+              - symbol: BTC-USD
+                name: Bitcoin
+              - symbol: NVDA
+                name: NVIDIA
+              - symbol: AAPL
+                name: Apple
+              - symbol: MSFT
+                name: Microsoft
+              - symbol: GOOGL
+                name: Google
+              - symbol: AMD
+                name: AMD
+              - symbol: RDDT
+                name: Reddit
